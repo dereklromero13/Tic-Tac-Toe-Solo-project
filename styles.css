@@ -1,1 +1,79 @@
+html, body {
+  height: 100%;
+}
 
+.tic-tac-toe-game-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+}
+
+.player-1-game-section, .player-2-game-section {
+  width: 25%;
+  background: linear-gradient(#3399ff, #990099);
+  height: 100vh;
+}
+
+.player-1-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+
+}
+
+.selected-players-turn {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.player-2-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.player-1-number-of-wins {
+  display: flex;
+  justify-content: center;
+}
+
+.player-2-number-of-wins {
+  display: flex;
+  justify-content: center;
+}
+
+.play-area {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-left: 10%;
+  padding-top: 30%;
+  height: 50%;
+  width: 80%;
+}
+
+.top-left, .top-middle, .top-right, .middle-left, .middle-middle, .middle-right, .bottom-left, .bottom-middle, .bottom-right {
+  border: 10px solid black;
+
+}
+
+.top-left, .top-middle, .top-right {
+  border-top: none;
+}
+
+.top-right, .middle-right, .bottom-right {
+  border-right: none;
+}
+
+.top-left, .middle-left, .bottom-left {
+  border-left: none;
+}
+
+.bottom-left, .bottom-middle, .bottom-right {
+  border-bottom: none;
+}
