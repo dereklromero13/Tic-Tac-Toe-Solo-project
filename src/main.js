@@ -18,16 +18,23 @@ var player1 = new Player(1, 'x')
 var player2 = new Player(2, 'o')
 var game = new Game(player1, player2);
 
+buttonSquares.forEach(buttonSquare => buttonSquare.addEventListener("click", () => game.chooseSquare(buttonSquare)))
 
 
-game.board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-  function updateGameBoard() {
+
+
+
+
+
+
+
+
+function updateGameBoard() {
   document.querySelector('.play-area').innerHTML = '';
   for (var i = 0; i < game.board.length; i++) {
-  box.innerHTML = game.board[i]
-   }
+    box.innerHTML = game.board[i]
   }
+}
 
-
-buttonSquares.forEach(buttonSquare => buttonSquare.addEventListener("click", () => console.log('hello')))
+game.plays = [0, 0, 0, 0, 0, 0, 0, 0, 0]
